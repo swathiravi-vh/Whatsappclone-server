@@ -6,6 +6,7 @@ const Messages = require("./dbMessages");
 const Pusher = require("pusher");
 
 const app = express();
+const port = process.env.PORT || 5000;
 
 const pusher = new Pusher({
   appId: "1594267",
@@ -109,6 +110,6 @@ app.get("/all/rooms", (req, res) => {
   });
 });
 
-app.listen(5000, () => {
-  console.log("Server is up and running");
+app.listen(port, () => {
+  console.log(`listening on localhost:${port}`);
 });
