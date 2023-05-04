@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cors());
 
 const dbUrl =
-  "MONGODB_URL";
+  "mongodb+srv://123456:123456-1@cluster0.usjjlsk.mongodb.net/whatsappclone?retryWrites=true&w=majority";
 
 mongoose.connect(dbUrl);
 
