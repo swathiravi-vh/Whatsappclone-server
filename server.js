@@ -16,8 +16,8 @@ const pusher = new Pusher({
   useTLS: true,
 });
 
-app.use(cors());
 app.use(express.json());
+app.use(cors());
 
 const dbUrl =
   "mongodb+srv://123456:123456-1@cluster0.usjjlsk.mongodb.net/whatsappclone?retryWrites=true&w=majority";
